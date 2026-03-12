@@ -1,0 +1,43 @@
+/* Centra el contenido principal */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Diseño del cuadro de Perú (Aside) */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+/* Ajuste de tu foto de perfil */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #333;
+    text-align: center;
+    background-color: #eee;
+}
