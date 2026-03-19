@@ -1,3 +1,9 @@
+</ > CSS * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Centra el contenido principal */
 main {
     max-width: 840px;
@@ -6,8 +12,18 @@ main {
     font-family: Arial, sans-serif;
 }
 
+/* Imagen a la derecha */
+main img {
+    float: right;
+    margin-left: 1rem;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Diseño del cuadro de Perú (Aside) */
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
@@ -24,13 +40,13 @@ aside img {
     max-width: 250px;
 }
 
-/* Ajuste de tu foto de perfil */
-main img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 10px 0;
+/* Texto sobre la imagen*/
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px;
 }
 
 /* Pie de página */
@@ -40,4 +56,14 @@ footer {
     border-top: 2px solid #333;
     text-align: center;
     background-color: #eee;
+}
+
+</ > CSS
+/* Selectores de clase */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
 }
