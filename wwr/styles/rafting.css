@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-color: #2a9d8f;
     --accent1-color: #264653;
@@ -122,4 +123,77 @@ footer {
 
 .socialmedia img {
     width: 35px;
+=======
+:root {
+    --primary-color: #2a9d8f;
+    --accent1-color: #264653;
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+    margin: 0 10px;
+>>>>>>> 27e24af0472ca16ef75a69fb9a3bcbd2f718a7e1
 }
