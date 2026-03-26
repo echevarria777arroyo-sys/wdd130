@@ -23,31 +23,48 @@ footer {
     margin: 0 auto;
 }
 
+/* HEADER GRID ✅ */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 10px;
+}
+
+header img {
+    width: 120px;
+}
+
+/* NAV FLEX ✅ */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TITLES */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -56,17 +73,53 @@ h1 {
     color: white;
 }
 
+.hero article {
+    margin: 10px;
+}
+
 .hero article img {
     float: right;
     width: 125px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* HISTORY */
+.history {
+    padding: 20px;
+}
+
+/* ADVENTURES */
+.adventures {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px;
+}
+
+/* SOCIAL MEDIA RIGHT ✅ */
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia img {
     width: 35px;
-    height: auto;
-    margin: 0 10px;
 }

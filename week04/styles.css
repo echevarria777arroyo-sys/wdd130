@@ -1,0 +1,62 @@
+/* 1. Universal Selector - Reseteo total */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 2. Floating Image - La foto a la derecha */
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #ccc;
+}
+
+/* 3. Aside Layout */
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+    /* Contenedor para el overlay del h2 */
+}
+
+/* Heading Overlay - El nombre de la ciudad sobre la imagen */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    /* Puedes ajustar este número según tu imagen */
+    left: 150px;
+    /* Puedes ajustar este número según tu imagen */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+/* --- Class Selectors --- */
+
+/* 4. Clase .box */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    /* Gris claro como pide la tarea */
+    color: #000;
+}
+
+/* Estilo para los links del Nav */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
