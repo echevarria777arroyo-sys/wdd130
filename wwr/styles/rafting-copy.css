@@ -1,0 +1,92 @@
+/* --- GENERAL STYLES --- */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Titles Color (Greenish from your Task 1) */
+h2 {
+    color: #00897b;
+}
+
+/* --- HEADER WITH CSS GRID (Week 4 Requirement) --- */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #263238;
+    /* Dark background like Task 1 */
+    padding: 15px 30px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* --- NAVIGATION WITH CSS FLEX (Week 4 Requirement) --- */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+
+/* --- ADVENTURES SECTION (Horizontal Layout) --- */
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- FOOTER (Dark background with White text) --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #263238;
+    /* Dark background like Task 1 */
+    color: white;
+    /* White text for your name */
+    margin-top: 60px;
+}
+
+/* Force white text for all text in footer */
+footer p,
+footer span {
+    color: white !important;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+/* Social icons size fix */
+.social a img {
+    width: 35px;
+    height: auto;
+}

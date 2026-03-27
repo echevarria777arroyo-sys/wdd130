@@ -1,199 +1,141 @@
-<<<<<<< HEAD
-:root {
-    --primary-color: #2a9d8f;
-    --accent1-color: #264653;
-    --heading-font: Arial, sans-serif;
-    --body-font: Verdana, sans-serif;
-}
-
-* {
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* HEADER GRID ✅ */
+/* --- HEADER CON CSS GRID (Requisito W04) --- */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
+    /* Logo fijo y el resto para el menú */
     align-items: center;
-    background-color: var(--accent1-color);
-    padding: 10px;
+    background-color: #004d40;
+    /* Verde oscuro profesional */
+    padding: 15px 30px;
 }
 
 header img {
-    width: 120px;
+    width: 100px;
+    height: auto;
 }
 
-/* NAV FLEX ✅ */
+/* --- NAV CON CSS FLEX (Requisito W04) --- */
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    /* Alinea los enlaces a la derecha */
+    gap: 20px;
+    /* Espacio uniforme entre enlaces */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
 }
 
-/* TITLES */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
 }
 
-/* HERO */
-.hero {
-    position: relative;
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .hero img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--accent1-color);
-    color: white;
-}
-
-.hero article {
-    margin: 10px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-/* HISTORY */
 .history {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Texto e imagen lado a lado */
+    gap: 30px;
+    align-items: center;
+    margin: 40px 0;
 }
 
-/* ADVENTURES */
-.adventures {
-    padding: 20px;
-}
-
-.gallery {
-    display: flex;
-    gap: 10px;
-}
-
-.gallery img {
+.history img {
     width: 100%;
+    border-radius: 8px;
 }
 
-figure {
+/* --- SECCIÓN DE AVENTURAS (Horizontal con Flex) --- */
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Para que sea responsivo si la pantalla es pequeña */
+}
+
+.adventure-grid figure {
+    margin: 0;
+    flex: 1;
+    /* Hace que todas las fotos midan lo mismo */
     text-align: center;
 }
 
-/* FOOTER */
+.adventure-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* --- FOOTER (Iconos a la derecha) --- */
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: var(--accent1-color);
-    color: white;
-    padding: 10px;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e0f2f1;
+    /* Un tono claro que combina */
+    margin-top: 60px;
+    border-top: 4px solid #004d40;
 }
 
-/* SOCIAL MEDIA RIGHT ✅ */
-.socialmedia {
-    display: flex;
-    gap: 10px;
-}
-
-.socialmedia img {
-    width: 35px;
-=======
-:root {
-    --primary-color: #2a9d8f;
-    --accent1-color: #264653;
-    --heading-font: Arial, sans-serif;
-    --body-font: Verdana, sans-serif;
-}
-
-* {
+footer p {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: #333;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+.social {
+    display: flex;
+    gap: 20px;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--accent1-color);
-    color: white;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
+.social img {
     width: 35px;
-    height: auto;
-    margin: 0 10px;
->>>>>>> 27e24af0472ca16ef75a69fb9a3bcbd2f718a7e1
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
 }
